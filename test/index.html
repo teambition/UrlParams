@@ -9,12 +9,10 @@
 </head>
 <body>
 	<div id="urlParam"></div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="jquery.UrlParams.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../src/jquery.url-params.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
-		$(document).ready(function(){
-			$("#urlParam").html($.urlParams("get", "test"));
-		});
+		console.log($.urlParams('get', 'token'));
 	</script>
 </body>
 </html>

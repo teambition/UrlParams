@@ -1,0 +1,29 @@
+{
+  "name": "tb.jquery.url-params",
+  "version": "1.0.0",
+  "description": "jQuery function for parsing URL parameters, originally created by Skarabaeus.",
+  "main": "dist/jquery.url-params.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teambition/UrlParams.git"
+  },
+  "keywords": [
+    "teambition",
+    "jquery",
+    "url params"
+  ],
+  "author": "Qi Junyuan <conan007ai@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teambition/UrlParams/issues"
+  },
+  "homepage": "https://github.com/teambition/UrlParams",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-bump": "0.0.13"
+  }
+}
