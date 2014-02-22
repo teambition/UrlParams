@@ -1,6 +1,6 @@
 {
   "name": "tb.jquery.url-params",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jQuery function for parsing URL parameters, originally created by Skarabaeus.",
   "main": "dist/jquery.url-params.min.js",
   "directories": {
