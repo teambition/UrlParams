@@ -9,15 +9,18 @@
 }(function ($) {
   $.extend({
     urlParams: function(method, param){
-      var params = [], hash;
+      var params = [],
+          hash;
       var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
       var keys = [];
 
       for(var i = 0; i < hashes.length; i++) {
-        hash = hashes[i].split('=');
-        params.push(hash[0]);
-        keys.push(hash[0]);
-        params[hash[0]] = unescape(hash[1]) || true;
+        var _hashStr = hashes[i];
+        var _param = _hashStr.slice(0, _hashStr.indexOf('='));
+        var _value = _hashStr.slice(_hashStr.indexOf('=') + 1);
+        params.push(_param);
+        keys.push(_param);
+        params[_param] = unescape(_value) || true;
       }
 
       switch(method) {
